@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Festus Family Hospital</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  🏥 <strong>The Festus Family Hospital</strong>
+</header>
+
+<div id="app">
+
+  <!-- REGISTRY -->
+  <section class="panel">
+    <h2>Front Desk / Registry</h2>
+
+    <input id="regName" placeholder="Full Name">
+    <input id="regAge" placeholder="Age">
+    <input id="regAmount" value="18500">
+
+    <button onclick="registerPatient()">Register Patient</button>
+
+    <div class="result" id="regResult"></div>
+  </section>
+
+  <!-- LOGIN -->
+  <section class="panel">
+    <h2>Department Login</h2>
+
+    <input id="staffName" placeholder="Staff Name">
+
+    <select id="department">
+      <!-- injected by JS -->
+    </select>
+
+    <button onclick="loginDepartment()">Login</button>
+  </section>
+
+  <!-- DEPARTMENT VIEW -->
+  <section id="departmentView" class="panel hidden">
+    <h2 id="deptTitle"></h2>
+
+    <input id="patientMatric" placeholder="Patient Matric Number">
+    <button onclick="openPatient()">Open Patient</button>
+
+    <h3 id="patientHeader"></h3>
+
+    <div id="departmentContent" class="scrollable"></div>
+
+    <button onclick="logoutDept()">Logout</button>
+  </section>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

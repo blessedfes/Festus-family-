@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+}
+
+header {
+  background: #0a3d62;
+  color: white;
+  padding: 15px;
+  font-size: 20px;
+}
+
+#app {
+  padding: 15px;
+}
+
+.panel {
+  background: white;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+input, select, button {
+  padding: 8px;
+  margin: 5px 0;
+  width: 100%;
+}
+
+button {
+  background: #0a3d62;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.hidden {
+  display: none;
+}
+
+.scrollable {
+  max-height: 400px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.record {
+  border: 1px solid #ddd;
+  padding: 8px;
+  margin-bottom: 10px;
+}
